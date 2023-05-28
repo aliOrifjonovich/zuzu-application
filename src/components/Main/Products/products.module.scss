@@ -1,0 +1,18 @@
+.wrapper {
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 56px;
+    scroll-margin-top: 100px;
+  }
+  .product_name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #292929;
+  }
+}
+
+

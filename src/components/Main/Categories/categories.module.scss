@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 56px;
+  // position: sticky;
+  // top: 98px;
+  // z-index: 10;
+
+  a {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    background: #ffffff;
+    color: #000;
+  }
+  .active{
+        background: #EC8D1E;
+        color: #ffffff;
+  }
+}

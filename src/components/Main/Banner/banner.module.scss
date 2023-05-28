@@ -1,0 +1,121 @@
+.SwiperWrapper{
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+// Apply custom styles to pagination bullets
+.swiper-pagination-bullet {
+  background-color: #aaa;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+
+  &.swiper-pagination-bullet-active {
+    background-color: #333;
+  }
+}
+
+// .swiper_wrapper {
+//     height: rem(430);
+//     border-radius: rem(24);
+  
+//     @media (max-width: 768px) {
+//       height: 100%;
+//       border-radius: 0 0 rem(24) rem(24);
+//     }
+//     img {
+//       object-fit: cover;
+//     }
+//     border: 2px solid red;
+//     .swiper-pagination {
+//       .swiper-pagination-bullet {
+//         filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.12));
+//         width: rem(40);
+//         height: rem(6);
+//         border-radius: 6px;
+//         background-color: #eef0f2;
+//         opacity: 1;
+//         transition: all 0.25s linear;
+//         &-active {
+//           // width: rem(28);
+//           border-radius: 6px;
+//           background-color: var(--primary-color) !important;
+//           transition: all 0.25s linear;
+//         }
+//       }
+//     }
+//     .swiper-button-next,
+//     .swiper-button-prev {
+//       display: none;
+//       transition: all 0.22s ease-in;
+//     }
+//     &:hover {
+//       .swiper-button-next {
+//         filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.12));
+//         transition: all 0.25s ease-in;
+//         display: block;
+//         // background-image: url('/public/icons/next.svg');
+//         background-repeat: no-repeat;
+//         background-position: 50% 50% !important;
+//         // margin-right: rem(100);
+//         background-color: rgba(255, 255, 255, 0.7);
+//         border-radius: rem(50);
+//         width: rem(32);
+//         height: rem(32);
+//         transition: all 0.2s ease-in;
+//         &::after {
+//           display: none;
+//         }
+//         @media (max-width: 768px) {
+//           display: none;
+//         }
+//       }
+//       .swiper-button-prev {
+//         filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.12));
+//         display: block;
+//         transition: all 0.22s ease-in;
+//         // background-image: url('/public/icons/next.svg');
+//         background-repeat: no-repeat;
+//         background-position: 50% 50% !important;
+//         background-color: rgba(255, 255, 255, 0.7);
+//         border-radius: rem(50);
+//         width: rem(32);
+//         height: rem(32);
+//         &::after {
+//           display: none;
+//         }
+//         @media (max-width: 768px) {
+//           display: none;
+//         }
+//       }
+//     }
+  
+//     &__realestate {
+//       height: rem(275);
+//       border-radius: rem(8);
+//       img {
+//         width: 100%;
+//         height: rem(275);
+//       }
+//     }
+//   }
