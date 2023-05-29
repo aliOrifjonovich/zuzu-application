@@ -4,11 +4,8 @@
   align-items: center;
   gap: 24px;
   margin-bottom: 56px;
-  // position: sticky;
-  // top: 98px;
-  // z-index: 10;
 
-  a {
+  .category {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
@@ -22,9 +19,17 @@
     cursor: pointer;
     background: #ffffff;
     color: #000;
+    transition: all .2s ease-in-out;
   }
+
+  .category:hover {
+    background: #ec8d1e;
+    color: #ffffff;
+    transition: all .2s ease-in-out;
+  }
+
   .active{
-        background: #EC8D1E;
-        color: #ffffff;
+    background: #ec8d1e;
+    color: #ffffff;
   }
 }

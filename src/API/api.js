@@ -18,11 +18,11 @@ export const Language = [
 
 export const Location = ["Tashkent", "Samarkand", "Andijan"];
 export const CategoriesMenu = [
-  { name: "Пицца", id: "pizza" },
-  {name:"Паста", id: "pasta" },
-  {name: "Салаты", id: "salat" },
-  {name: "Напитки", id: "drinks" },
-  {name: "Синнамон роллы", id: "sinim" },
-  {name:  "Гарниры", id: "gar" },
-  {name: "Соусы", id: "sous" }
+  { name: "Пицца", id: "Pizza" },
+  {name:"Паста", id: "Pasta" },
+  {name: "Салаты", id: "Salat" },
+  {name: "Напитки", id: "Drinks" },
+  {name: "Синнамон роллы", id: "Sinim" },
+  {name:  "Гарниры", id: "Gar" },
+  {name: "Соусы", id: "Sous" }
 ];

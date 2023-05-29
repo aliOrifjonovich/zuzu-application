@@ -9,6 +9,7 @@ const Products = () => {
   const [openProduct, setOpenProduct] = useState(false);
   const [counter, setCounter] = useState(1);
 
+
   const handleOpenProduct = (product) => {
     setOpenProduct(product);
     setCounter(1);

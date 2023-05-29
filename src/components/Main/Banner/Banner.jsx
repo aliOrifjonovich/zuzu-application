@@ -25,16 +25,16 @@ const Banner = () => {
         modules={[Pagination, Navigation]}
         className={cls.SwiperWrapper}
       >
-        <SwiperSlide>
+        <SwiperSlide className={cls.img_wrapper}>
           <img src={BannerImage} alt="img" className={cls.image} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={cls.img_wrapper}>
           <img src={BannerImage_2} alt="img" className={cls.image} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={cls.img_wrapper}>
           <img src={BannerImage} alt="img" className={cls.image} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className={cls.img_wrapper}>
           <img src={BannerImage} alt="img" className={cls.image} />
         </SwiperSlide>
       </Swiper>
