@@ -4,15 +4,16 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 48px;
+  border: 2px solid red;
 
   .modal_img {
-    width: 262px;
-    // height: 262px;
-    border: 2px solid red;
     background: #ffffff;
+    width: 262px;
+    border: 2px solid red;
 
     img {
       width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -21,6 +22,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 48px;
+    border: 2px solid red;
 
     .info {
       display: flex;

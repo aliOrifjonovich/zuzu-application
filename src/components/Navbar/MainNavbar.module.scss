@@ -52,20 +52,37 @@
   align-items: center;
   gap: 24px;
 
-  .cart {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 8px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    cursor: pointer;
-    padding: 12px 16px;
-    cursor: pointer;
-    color: #000;
-    background: #f5f5f5;
-    border-radius: 100px;
+  .cart_count_button{
+    position: relative;
+    .cart {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 8px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      cursor: pointer;
+      padding: 12px 16px;
+      cursor: pointer;
+      color: #000;
+      background: #f5f5f5;
+      border-radius: 100px;
+    }
+    span{
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      border: 2px solid #f5f5f5;
+      background: #f5f5f5;
+      border-radius: 20px;
+      padding: 2px 5px;
+      color: #000;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: center;
+      
+    }
   }
 
   .language {

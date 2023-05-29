@@ -40,7 +40,7 @@ const Order = ({ openProduct, handleCloseProduct, counter, setCounter }) => {
                     img: openProduct.img,
                     name: openProduct.name,
                     price: openProduct.price,
-                    id: openProduct.id,
+                    id: "a" + Date.now(),
                   })
                 );
                 handleCloseProduct(false);

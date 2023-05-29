@@ -16,12 +16,14 @@ import { Container } from "@mui/material";
 import Modal from "../Modal/Modal";
 import Login from "./Login/Login";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const MainNavbar = () => {
   // State for both of the popover and chosenLocation components
   const [open, setOpen] = React.useState(false);
   const [openLogin, setOpenLogin] = useState(false);
   const [openLocation, setOpenLocation] = useState(false);
+  const store = useSelector((store) => store.cart);
 
   // States
   const [location, setLocation] = useState("Tashkent");
@@ -69,9 +71,12 @@ const MainNavbar = () => {
             </div>
             <div className={cls.part2}>
               <Link to="/cart">
-                <div className={cls.cart}>
-                  <CartIcon />
-                  Cart
+                <div className={cls.cart_count_button}>
+                  <div className={cls.cart}>
+                    <CartIcon />
+                    Cart
+                  </div>
+                  {store.length == 0 ? null : <span>{store.length}</span>}
                 </div>
               </Link>
               <div className={cls.language} onClick={handleClick}>

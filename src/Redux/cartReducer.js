@@ -8,6 +8,7 @@ const intialState = [];
 export const cartReducer = (state = intialState, action) => {
   switch (action.type) {
     case Add:
+      console.log(state);
       return [action.newCart, ...state];
     case CLEAR:
       return [];
