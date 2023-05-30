@@ -1,18 +1,10 @@
 import React from "react";
 import cls from "./product.module.scss";
 
-const Product = ({
-  img,
-  name,
-  comment,
-  price,
-  handleOpenProduct,
-  id,
-}) => {
-
-  const handleSelectProduct  =()=>{
-    handleOpenProduct({ id, img, name, comment, price })
-  }
+const Product = ({ img, name, comment, price, handleOpenProduct, id }) => {
+  const handleSelectProduct = () => {
+    handleOpenProduct({ id, img, name, comment, price });
+  };
   return (
     <>
       <div className={cls.product_item}>
@@ -23,11 +15,9 @@ const Product = ({
         </div>
         <div className={cls.product_price_buy}>
           <div className={cls.product_price}> От {price} сумов</div>
-          <div
-            className={cls.buy}
-            onClick={handleSelectProduct}
-          >
-            Выбрать
+          <div className={cls.buy} onClick={handleSelectProduct}>
+            <span className={cls.buyText}>Выбрать</span>
+            <span className={cls.buyText2}>От {price} сумов</span>
           </div>
         </div>
         {/* <p className={cls.noProduct} >Временно не доступен</p> */}

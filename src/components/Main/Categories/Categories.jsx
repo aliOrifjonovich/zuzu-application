@@ -8,7 +8,7 @@ const Categories = () => {
 
   const handleCategoryClick = (categoryId) => {
     setActiveCategoryId(categoryId);
-  };  
+  };
 
   return (
     <div className={cls.wrapper}>
@@ -19,10 +19,12 @@ const Categories = () => {
           smooth={true}
           offset={-100}
           duration={500}
-          className={`${cls.category} ${category.id === activeCategoryId ? cls.active : ""}`}
-          onClick={()=>handleCategoryClick(category.id)}
+          className={`${cls.category} ${
+            category.id === activeCategoryId ? cls.active : ""
+          }`}
+          onClick={() => handleCategoryClick(category.id)}
         >
-          {category.name}
+          <div className={cls.categoryName}>{category.name}</div>
         </Link>
       ))}
     </div>

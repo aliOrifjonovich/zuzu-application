@@ -59,7 +59,11 @@ export default function MenuNavbar() {
                     {(props) => (
                       <div className={cls.page}>
                         <h1 className={cls.page_text}>{item.page}</h1>
-                        {props.isActive ? <span><ActiveIcon /></span> : null}
+                        {props.isActive ? (
+                          <span>
+                            <ActiveIcon />
+                          </span>
+                        ) : null}
                       </div>
                     )}
                   </NavLink>

@@ -15,3 +15,19 @@
     }
   }
 }
+
+@media (max-width: 395px) {
+  .SwiperWrapper {
+    width: 370px;
+    height: 160px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 376px) {
+  .SwiperWrapper {
+    width: 343px;
+    height: 160px;
+    padding: 0;
+  }
+}

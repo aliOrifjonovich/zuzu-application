@@ -19,17 +19,44 @@
     cursor: pointer;
     background: #ffffff;
     color: #000;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .category:hover {
     background: #ec8d1e;
     color: #ffffff;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
-  .active{
+  .active {
     background: #ec8d1e;
     color: #ffffff;
+  }
+}
+
+@media (max-width: 396px) {
+  .wrapper {
+    // position: sticky;
+    // top: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 32px;
+    // background-color: #000;
+    overflow: scroll;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Chrome, Edge, and Safari */
+  }
+
+  .wrapper::-webkit-scrollbar {
+    width: 6px; /* Adjust the width as needed */
+  }
+
+  .wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  .wrapper::-webkit-scrollbar-track {
+    background-color: transparent;
   }
 }

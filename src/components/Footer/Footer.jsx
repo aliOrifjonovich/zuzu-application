@@ -36,15 +36,14 @@ const Footer = () => {
           </div>
           <div className={cls.second_footer}>
             <div className={cls.copyright}>
-              <p>©Zuzu 2005 - 2021 All rights reserved</p>
+              <p className={cls.text}>©Zuzu 2005 - 2021 All rights reserved</p>
               <div className={cls.medias}>
-                {/* <InstagramIcon />
-            <FacebookIcon />
-            <TelegramIcon /> */}
                 <box-icon type="logo" name="instagram"></box-icon>
                 <box-icon name="telegram" type="logo"></box-icon>
                 <box-icon name="facebook" type="logo"></box-icon>
               </div>
+              <p className={cls.text2}>©Zuzu 2005 - 2021 All rights reserved</p>
+
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@
   align-items: center;
   gap: 24px;
 
-  .cart_count_button{
+  .cart_count_button {
     position: relative;
     .cart {
       display: flex;
@@ -69,19 +69,18 @@
       background: #f5f5f5;
       border-radius: 100px;
     }
-    span{
+    span {
       position: absolute;
       top: -5px;
       right: -5px;
       border: 2px solid #f5f5f5;
-      background: #f5f5f5;
+      background:  #EC8D1E;;
       border-radius: 20px;
       padding: 2px 5px;
-      color: #000;
+      color: #fff;
       font-size: 16px;
       font-weight: 500;
       text-decoration: center;
-      
     }
   }
 
@@ -106,5 +105,28 @@
     padding: 12px 16px;
     background: #f5f5f5;
     border-radius: 100px;
+  }
+}
+
+@media (max-width: 395px) {
+  .part1 {
+    .location {
+      display: none;
+    }
+  }
+  .part2 {
+    .login {
+      display: none;
+    }
+    .language {
+      display: none;
+    }
+    .cart_count_button {
+      .cart {
+        span {
+          display: none;
+        }
+      }
+    }
   }
 }
