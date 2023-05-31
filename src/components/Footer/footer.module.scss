@@ -36,6 +36,10 @@
       align-items: center;
       justify-content: space-between;
 
+      .text2{
+        display: none;
+      }
+
       .medias {
         display: flex;
         flex-direction: row;
@@ -50,7 +54,7 @@
   }
 }
 
-@media (max-width: 396px) {
+@media (max-width: 480px) {
   .footer {
     .wrapper {
       gap: 40px;
@@ -79,6 +83,7 @@
             display: none;
           }
           .text2 {
+            display: block;
             padding: 24px 0;
           }
         }

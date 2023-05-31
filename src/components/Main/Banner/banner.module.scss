@@ -1,33 +1,27 @@
 .SwiperWrapper {
   margin-bottom: 40px;
-  width: 1248px;
-  height: 540px;
+  // max-width: 1248px !important;
+  // height: 540px !important;
+  width: 100% !important;
+  height: 100% !important;
   padding: 0 20px;
 
   .img_wrapper {
-    // width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
 
     img {
       width: 100%;
-      object-fit: cover;
       height: 100%;
+      object-fit: cover;
       border-radius: 1rem !important;
     }
   }
 }
 
-@media (max-width: 395px) {
-  .SwiperWrapper {
-    width: 370px;
-    height: 160px;
-    padding: 0;
-  }
-}
-
-@media (max-width: 376px) {
-  .SwiperWrapper {
-    width: 343px;
-    height: 160px;
-    padding: 0;
+@media (max-width: 895px) {
+  .img_wrapper {
+    width: 100% !important;
+    height: 100% !important;
   }
 }

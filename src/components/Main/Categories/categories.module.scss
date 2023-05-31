@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: 396px) {
+@media (max-width: 930px) {
   .wrapper {
     // position: sticky;
     // top: 0;
@@ -59,4 +59,7 @@
   .wrapper::-webkit-scrollbar-track {
     background-color: transparent;
   }
+}
+
+@media (max-width: 575px) {
 }

@@ -1,7 +1,8 @@
 .branchinfo {
   background: #fff;
   margin-bottom: 59px;
-  width: 843px;
+  max-width: 843px;
+  width: 100%;
   border-radius: 20px;
 }
 
@@ -66,4 +67,8 @@
       }
     }
   }
+}
+
+@media (max-width: 768px){
+
 }

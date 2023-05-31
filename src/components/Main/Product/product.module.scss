@@ -58,16 +58,27 @@
       background: #f5f5f5;
       border-radius: 100px;
 
-      .buyText2{
+      .buyText2 {
         display: none;
       }
     }
   }
 }
+@media (max-width: 1200px) {
+  .product_price_buy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-@media (max-width: 395px) {
+  .buy{
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
   .product_item {
-    padding: 8px 8px 12px;
+    // padding: 8px 8px 12px;
 
     .product_name {
       font-weight: 500;
@@ -95,6 +106,7 @@
           padding: 0;
         }
         .buyText2 {
+          display: block;
           font-weight: 500;
           font-size: 15px;
           line-height: 18px;
@@ -103,3 +115,9 @@
     }
   }
 }
+
+// @media (max-width: 575px) {
+// }
+
+// @media (max-width: 395px) {
+// }

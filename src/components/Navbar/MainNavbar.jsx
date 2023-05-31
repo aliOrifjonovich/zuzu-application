@@ -74,7 +74,7 @@ const MainNavbar = () => {
                 <div className={cls.cart_count_button}>
                   <div className={cls.cart}>
                     <CartIcon />
-                   <span className={cls.cart_text}>Cart</span>
+                   <p className={cls.cart_text}>Cart</p>
                   </div>
                   {store.length == 0 ? null : <span>{store.length}</span>}
                 </div>
