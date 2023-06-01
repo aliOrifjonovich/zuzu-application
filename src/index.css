@@ -161,6 +161,34 @@ h6 {
   opacity: 1 !important;
 }
 
+@media (max-width: 540px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .swiper-button-next {
+    position: absolute !important;
+    right: 10px !important;
+    z-index: 100 !important;
+  }
+  .swiper-button-prev {
+    position: absolute !important;
+    left: 10px !important;
+    z-index: 100 !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 24px !important;
+    height: 8px !important;
+  }
+}
+
 @media (max-width: 396px) {
   .swiper-button-prev,
   .swiper-button-next {
@@ -175,5 +203,4 @@ h6 {
     width: 24px !important;
     height: 8px !important;
   }
-
 }

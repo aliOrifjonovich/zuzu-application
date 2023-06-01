@@ -42,14 +42,19 @@
   }
 
   .info_bot {
-    width: 673px;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #000;
+    word-break: break-all;
 
     span{
         color: #e4bb05;
     }
+
+  }
+  @media (max-width: 900px){
+    width: 100%;
   }
 }
+

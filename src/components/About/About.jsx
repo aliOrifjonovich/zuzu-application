@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className={cls.wrapper}>
       <div className={cls.img}>
-        <img src={AboutImage} alt="" />
+        <img src={AboutImage} alt="img" />
       </div>
       <div className={cls.about_text}>
         <h1 className={cls.header}>О нас</h1>

@@ -8,6 +8,16 @@
   width: 843px;
   margin-bottom: 161px;
 
+  .img{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+    @media(max-width:900px){
+      width: 100%;
+    }
+  }
+
   .about_text {
     display: flex;
     flex-direction: column;
@@ -30,5 +40,9 @@
       line-height: 28px;
       color: #292929;
     }
+  }
+
+  @media(max-width:900px){
+    width: 100%;
   }
 }

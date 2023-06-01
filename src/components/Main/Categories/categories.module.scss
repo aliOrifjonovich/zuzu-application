@@ -59,6 +59,10 @@
   .wrapper::-webkit-scrollbar-track {
     background-color: transparent;
   }
+
+  .categoryName{
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 575px) {

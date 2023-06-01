@@ -5,10 +5,11 @@ import Product from "../Product/Product";
 import Modal from "../../Modal/Modal";
 import productsData from "../../../API/data";
 import Order from "../../Order/Order";
+import MobileModal from "../../MobileModal/MobileModal";
+import MobileOrder from "../../MobileOrder/MobileOrder";
 const Products = () => {
   const [openProduct, setOpenProduct] = useState(false);
   const [counter, setCounter] = useState(1);
-
 
   const handleOpenProduct = (product) => {
     setOpenProduct(product);
@@ -29,7 +30,7 @@ const Products = () => {
               columns={{ xs: 4, sm: 8, md: 12 }}
             >
               {items.products.map((item) => (
-                <Grid item xs={2} sm={4} md={3} >
+                <Grid item xs={2} sm={4} md={3}>
                   <Product
                     id={item.id}
                     img={item.img}
@@ -55,6 +56,15 @@ const Products = () => {
           setCounter={setCounter}
         />
       </Modal>
+
+      <MobileModal open={!!openProduct.name} handleClose={handleCloseProduct} onOpen={()=>setOpenProduct(true)}>
+        <MobileOrder
+          openProduct={openProduct}
+          handleCloseProduct={handleCloseProduct}
+          counter={counter}
+          setCounter={setCounter}
+        />
+      </MobileModal>
     </>
   );
 };
