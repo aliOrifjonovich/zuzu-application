@@ -1,9 +1,16 @@
 .modal_wrapper {
+  height: 326px;
+  width: 802px;
   padding: 32px;
   display: flex;
   flex-direction: row;
-  // align-items: flex-start;
-  // gap: 28px;
+  gap: 28px;
+
+  .cancel {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+  }
 
   .modal_img {
     background: #ffffff;
@@ -54,6 +61,8 @@
         flex-direction: row;
         align-items: center;
         gap: 12px;
+        max-width: 146px;
+        width: 100%;
 
         span {
           display: flex;
@@ -71,6 +80,7 @@
           line-height: 20px;
           color: #292929;
           text-align: center;
+          width: 20px;
         }
       }
 

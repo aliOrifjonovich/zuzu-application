@@ -3,6 +3,7 @@ import cls from "./order.module.scss";
 import { AddAction } from "../../Redux/cartReducer";
 import { useDispatch } from "react-redux";
 import { MinusIcon, PlusIcon } from "../icons";
+import { CancelIcon } from "../icons";
 
 const Order = ({ openProduct, handleCloseProduct, counter, setCounter }) => {
   const dispatch = useDispatch();
@@ -10,6 +11,9 @@ const Order = ({ openProduct, handleCloseProduct, counter, setCounter }) => {
   return (
     <>
       <div className={cls.modal_wrapper}>
+        <div onClick={handleCloseProduct} className={cls.cancel}>
+          <CancelIcon/>
+        </div>
         <div className={cls.modal_img}>
           <img src={openProduct.img} alt="img" />
         </div>

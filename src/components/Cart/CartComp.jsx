@@ -35,58 +35,60 @@ const CartComp = () => {
                 </div>
               </div>
 
-              {products.map((item) => (
-                <div className={cls.chosen_products}>
-                  <div className={cls.chosen_product}>
-                    <div className={cls.chosen_product_img}>
-                      <img src={item.img} alt="pizza" />
-                    </div>
-                    <div className={cls.chosen_product_info}>
-                      <div className={cls.chosen_product_name}>
-                        <h2>{item.name}</h2>
-                        <h3>Средняя, Воздушное</h3>
+              <div className={cls.products}>
+                {products.map((item) => (
+                  <div className={cls.chosen_products}>
+                    <div className={cls.chosen_product}>
+                      <div className={cls.chosen_product_img}>
+                        <img src={item.img} alt="pizza" />
                       </div>
-                      <div className={cls.price_count}>
-                        <h2 className={cls.price}>{item.price}</h2>
-                        <div className={cls.count_wrapper}>
-                          <div
-                            className={cls.minus}
-                            onClick={() =>
-                              dispatch(
-                                SaveAction(item.id, item.counter, "minus")
-                              )
-                            }
-                          >
-                            <MinusIcon />
-                          </div>
-                          <div className={cls.count}>{item.counter}</div>
-                          <div
-                            className={cls.plus}
-                            onClick={() =>
-                              dispatch(
-                                SaveAction(item.id, item.counter, "plus")
-                              )
-                            }
-                          >
-                            <PlusIcon />
-                          </div>
+                      <div className={cls.chosen_product_info}>
+                        <div className={cls.chosen_product_name}>
+                          <h2>{item.name}</h2>
+                          <h3>Средняя, Воздушное</h3>
+                        </div>
+                        <div className={cls.price_count}>
+                          <h2 className={cls.price}>{item.price}</h2>
+                          <div className={cls.count_wrapper}>
+                            <div
+                              className={cls.minus}
+                              onClick={() =>
+                                dispatch(
+                                  SaveAction(item.id, item.counter, "minus")
+                                )
+                              }
+                            >
+                              <MinusIcon />
+                            </div>
+                            <div className={cls.count}>{item.counter}</div>
+                            <div
+                              className={cls.plus}
+                              onClick={() =>
+                                dispatch(
+                                  SaveAction(item.id, item.counter, "plus")
+                                )
+                              }
+                            >
+                              <PlusIcon />
+                            </div>
 
-                          <div
-                            className={cls.deleteEach}
-                            onClick={() => {
-                              console.log(products);
-                              console.log(item.id);
-                              dispatch(DeleteAction(item.id));
-                            }}
-                          >
-                            <CancelCartIcon />
+                            <div
+                              className={cls.deleteEach}
+                              onClick={() => {
+                                console.log(products);
+                                console.log(item.id);
+                                dispatch(DeleteAction(item.id));
+                              }}
+                            >
+                              <CancelCartIcon />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
             <div className={cls.cart_part2}>
               <div className={cls.header}>
