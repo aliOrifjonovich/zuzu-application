@@ -33,7 +33,7 @@ function MobileModal(props) {
       <Global
         styles={{
           '.MuiDrawer-root > .MuiPaper-root': {
-            height: `calc(85% - ${drawerBleeding}px)`,
+            height: `calc(60% - ${drawerBleeding}px)`,
             overflow: 'visible',
           },
         }}
