@@ -189,6 +189,11 @@ h6 {
   }
 }
 
+.MuiPaper-root{
+  max-width: 750px !important;
+  overflow: hidden;
+}
+
 @media (max-width: 396px) {
   .swiper-button-prev,
   .swiper-button-next {

@@ -16,9 +16,6 @@ const Branches = () => {
             <Link to="/branches">
               <p>Список</p>
             </Link>
-            <Link to="/map">
-              <p>Карта</p>
-            </Link>
           </div>
         </div>
         <Grid container spacing={{ xs: 2, md: 2 }}>

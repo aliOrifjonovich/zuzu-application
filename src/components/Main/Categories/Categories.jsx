@@ -11,23 +11,23 @@ const Categories = () => {
   };
 
   return (
-    <div className={cls.wrapper}>
-      {CategoriesMenu.map((category) => (
-        <Link
-          to={category.id}
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className={`${cls.category} ${
-            category.id === activeCategoryId ? cls.active : ""
-          }`}
-          onClick={() => handleCategoryClick(category.id)}
-        >
-          <div className={cls.categoryName}>{category.name}</div>
-        </Link>
-      ))}
-    </div>
+      <div className={cls.wrapper}>
+        {CategoriesMenu.map((category) => (
+          <Link
+            to={category.id}
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className={`${cls.category} ${
+              category.id === activeCategoryId ? cls.active : ""
+            }`}
+            onClick={() => handleCategoryClick(category.id)}
+          >
+            <div className={cls.categoryName}>{category.name}</div>
+          </Link>
+        ))}
+      </div>
   );
 };
 

@@ -21,8 +21,4 @@ export const CategoriesMenu = [
   { name: "Пицца", id: "Pizza" },
   {name:"Паста", id: "Pasta" },
   {name: "Салаты", id: "Salat" },
-  {name: "Напитки", id: "Drinks" },
-  {name: "Синнамон роллы", id: "Sinim" },
-  {name:  "Гарниры", id: "Gar" },
-  {name: "Соусы", id: "Sous" }
 ];

@@ -7,7 +7,6 @@ import Cart from "./Pages/Cart";
 import Branches from "./components/Branches/Branches";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Map from "./components/Branches/Map/Map";
 import BranchInfo from "./components/Branches/BranchInfo/BranchInfo";
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/branches" element={<Branches/>} />
             <Route path="/branches/:id" element={<BranchInfo/>} />
-            <Route path="/map" element={<Map/>} />
             <Route path="/about" element={<About/>} />
             <Route path="/contact" element={<Contact/>} />
           </Routes>

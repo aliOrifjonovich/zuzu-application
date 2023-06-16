@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     padding: 14px 24px;
+    background-color: #ffffff;
     gap: 10px;
     border-radius: 100px;
     cursor: pointer;
@@ -36,17 +37,19 @@
 
 @media (max-width: 930px) {
   .wrapper {
-    // position: sticky;
-    // top: 0;
     padding: 0;
     width: 100%;
     z-index: 100;
     margin-bottom: 32px;
-    // background-color: #000;
     overflow: scroll;
     scrollbar-width: thin; /* For Firefox */
     scrollbar-color: transparent transparent; /* For Chrome, Edge, and Safari */
+
+    .category{
+      background-color: #eee;
+    }
   }
+
 
   .wrapper::-webkit-scrollbar {
     width: 6px; /* Adjust the width as needed */
@@ -65,5 +68,3 @@
   }
 }
 
-@media (max-width: 575px) {
-}
